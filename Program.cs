@@ -23,6 +23,21 @@ void ShowArray(string[]array)
 
     Console.WriteLine();
 }
+string ThreeArray(string[]newArray)
+{
+    string result=String.Empty;
+    int length=newArray.Length;
+
+   for (int i=0;i<length;i++)
+   {
+    if (newArray[i].Length <=3) result=result+$"{newArray[i]+" "}" ;
+    /*else result=result +$"{"0"+" "}";*/
+   }
+    Console.WriteLine(result);
+return result;
+}
 
 string[]array1=CreateArray();
 ShowArray(array1);
+
+string array2=ThreeArray(array1);
